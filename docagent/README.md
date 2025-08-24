@@ -43,12 +43,14 @@ This example, unmodified, will run the create a `report.md` file with the output
 
 The docagent Crew is composed of multiple AI agents, each with unique roles, goals, and tools. These agents collaborate on a series of tasks, defined in `config/tasks.yaml`, leveraging their collective skills to achieve complex objectives. The `config/agents.yaml` file outlines the capabilities and configurations of each agent in your crew.
 
-## Support
 
-For support, questions, or feedback regarding the Docagent Crew or crewAI.
-- Visit our [documentation](https://docs.crewai.com)
-- Reach out to us through our [GitHub repository](https://github.com/joaomdmoura/crewai)
-- [Join our Discord](https://discord.com/invite/X4JWnZnxPb)
-- [Chat with our docs](https://chatg.pt/DWjSBZn)
+## Steps followed
 
-Let's create wonders together with the power and simplicity of crewAI.
+1) python3.12 is installed. Use crewai for demo project, Install create project: "crewai create crew docagent"
+2) Enable virtual environment and update .env file with required ollama version
+3) start ollama - "ollama serve" , this process should be running before you run "crewai run"
+4) prepare your internal documentation and upload your pdf files under knowledge directory.
+5) update config/agents.yaml and config/tasks.yaml with your tool details
+6) update agent detail, input variables..etc  and train the model using main.py and crew.py
+7) crewai install to install all the dependancies.
+8) crewai run to launch your doc agent for questions and answers...
