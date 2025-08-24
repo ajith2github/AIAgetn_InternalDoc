@@ -1,0 +1,9 @@
+answer_question_task:
+  description: >
+    Answer the user question with the most relavant information from the context and available knowledge sources.
+    Question: {question}
+    
+    Do not answer questions that are not related to context and knowledge sources.
+  expected_output: >
+    Best answer to the user question
+  agent: Ajith_observability_tool_export
